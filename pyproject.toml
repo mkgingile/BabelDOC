@@ -60,7 +60,7 @@ Changelog = "https://github.com/funstory-ai/BabelDOC/releases"
 packages = ["babeldoc"]
 
 [tool.ruff]
-line-length = 120
+line-length = 88  # personal preference: align with black's default
 target-version = "py310"
 
 [tool.ruff.lint]
