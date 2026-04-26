@@ -82,7 +82,8 @@ ignore_missing_imports = true
 testpaths = ["tests"]
 asyncio_mode = "auto"
 # Removed --cov-report=xml locally — I only care about terminal output
-addopts = "--cov=babeldoc --cov-report=term-missing"
+# Added -p no:warnings to suppress noisy deprecation warnings from upstream deps
+addopts = "--cov=babeldoc --cov-report=term-missing -p no:warnings"
 
 [tool.coverage.run]
 source = ["babeldoc"]
