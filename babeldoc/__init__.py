@@ -2,6 +2,9 @@
 
 Fork of funstory-ai/BabelDOC, providing tools for translating
 and processing PDF and other document formats.
+
+Personal fork: customized for local experimentation and learning.
+Upstream: https://github.com/funstory-ai/BabelDOC
 """
 
 from importlib.metadata import PackageNotFoundError, version
