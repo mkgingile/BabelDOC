@@ -5,6 +5,9 @@ and processing PDF and other document formats.
 
 Personal fork: customized for local experimentation and learning.
 Upstream: https://github.com/funstory-ai/BabelDOC
+
+Note: Using 'unknown' as fallback version instead of a fake semver
+string, to make it clearer when the package isn't properly installed.
 """
 
 from importlib.metadata import PackageNotFoundError, version
@@ -12,7 +15,9 @@ from importlib.metadata import PackageNotFoundError, version
 try:
     __version__ = version("babeldoc")
 except PackageNotFoundError:
-    __version__ = "0.0.0.dev0"
+    # Use 'unknown' to clearly indicate the package is not installed,
+    # rather than implying a specific (fake) version number.
+    __version__ = "unknown"
 
 __author__ = "BabelDOC Contributors"
 __license__ = "AGPL-3.0"
