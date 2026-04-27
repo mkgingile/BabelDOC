@@ -8,6 +8,10 @@ Upstream: https://github.com/funstory-ai/BabelDOC
 
 Note: Using 'unknown' as fallback version instead of a fake semver
 string, to make it clearer when the package isn't properly installed.
+
+Fork notes:
+- Tracking upstream at funstory-ai/BabelDOC
+- Local changes are minimal and experimental; not intended for production use
 """
 
 from importlib.metadata import PackageNotFoundError, version
